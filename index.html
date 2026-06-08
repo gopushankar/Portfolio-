@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gopu Shankar is a Full-Stack Developer and BCA graduate building React, Node.js, Python, and MySQL web applications.">
+    <meta name="keywords" content="Gopu Shankar, Full Stack Developer, BCA Graduate, React Developer, Node.js, Python, MySQL, Portfolio">
+    <meta name="author" content="Gopu Shankar">
+    <meta property="og:title" content="Gopu Shankar | Full Stack Developer">
+    <meta property="og:description" content="Modern developer portfolio showcasing projects, skills, education, achievements, resume, and GitHub activity.">
+    <meta property="og:image" content="img/profile.jpeg">
+    <meta property="og:type" content="website">
+    <title>Gopu Shankar | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="%234da3ff"/><text x="50" y="62" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="white">GS</text></svg>'>
+</head>
+<body>
+    <div class="loader" id="loader" aria-label="Loading portfolio">
+        <div class="loader-ring"></div>
+        <p>Loading Portfolio</p>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-outline" id="cursorOutline" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Gopu Shankar home">
+                <span class="brand-logo" aria-hidden="true">GS</span>
+                <span>Gopu Shankar</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content reveal">
+                <span class="eyebrow">Full-Stack Developer | BCA Graduate | Problem Solver</span>
+                <h1>Hi, I am <span>Gopu Shankar</span></h1>
+                <h2>Full-Stack Developer</h2>
+                <p class="hero-intro">
+                    I build web applications using React.js, Node.js, JavaScript, Python, and MySQL.
+                    I enjoy turning ideas into functional digital products that are scalable, user-friendly,
+                    and grounded in practical problem-solving.
+                </p>
+                <p class="typing-line">I am a <span id="typingText"></span><span class="caret">|</span></p>
+
+                <div class="hero-actions">
+                    <a class="btn primary" href="Gopu_Shankar_cv_9250.pdf" download>
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+                    <a class="btn secondary" href="#contact">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links" aria-label="Social profile links">
+                    <a href="https://github.com/gopushankar" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gopu-shankar-9a8b4a23a" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:gopu0611@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/_wolf0_6/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="profile-frame">
+                    <img src="img/profile.jpeg" alt="Portrait of Gopu Shankar" loading="eager">
+                    <div class="status-pill"><span></span> Open to collaborate</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-heading reveal">
+                <span class="eyebrow">About Me</span>
+                <h2>Full-stack builder with strong frontend and backend skills.</h2>
+                <p>Focused on Web Development, Cloud Computing, Data Science, and Software Engineering.</p>
+            </div>
+
+            <div class="about-grid">
+                <article class="glass-panel about-card reveal">
+                    <h3>Professional Summary</h3>
+                    <p>
+                        I am a Full-Stack Developer with hands-on experience in building web applications using
+                        React.js, Node.js, JavaScript, Python, and MySQL. I enjoy turning ideas into functional
+                        digital products and continuously improving my technical skills through projects,
+                        certifications, and practical problem-solving.
+                    </p>
+                    <p>
+                        I am passionate about creating scalable, user-friendly applications that solve real-world
+                        problems and deliver meaningful user experiences.
+                    </p>
+                </article>
+
+                <article class="glass-panel about-card reveal">
+                    <h3>Education & Objective</h3>
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-graduation-cap"></i><span>BCA, Chaitanya Deemed To Be University, 2023 - 2026, CGPA 9.</span></li>
+                        <li><i class="fa-solid fa-school"></i><span>Intermediate, Ekashila Junior College, 2021 - 2023, CGPA 8.9.</span></li>
+                        <li><i class="fa-solid fa-book-open"></i><span>Schooling, Ekashila High School, completed in 2021, CGPA 10.</span></li>
+                        <li><i class="fa-solid fa-bullseye"></i><span>Career objective: build impactful web products and grow as a reliable software engineer.</span></li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="stats-grid reveal" aria-label="Portfolio statistics">
+                <div class="stat-card"><strong data-count="5">0</strong><span>Featured Projects</span></div>
+                <div class="stat-card"><strong data-count="12">0</strong><span>Technologies Learned</span></div>
+                <div class="stat-card"><strong data-count="5">0</strong><span>Certifications</span></div>
+                <div class="stat-card"><strong data-count="2">0</strong><span>Major Interests</span></div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Technical Skills</span>
+                <h2>Modern stack with strong fundamentals.</h2>
+                <p>Core technologies from the CV, grouped by frontend, backend, database, and problem-solving strengths.</p>
+            </div>
+
+            <div class="skill-layout">
+                <article class="skill-category glass-panel reveal">
+                    <h3><i class="fa-solid fa-layer-group"></i> Frontend</h3>
+                    <div class="skill-bar"><span>HTML</span><strong>95%</strong><div><em style="--value:95%"></em></div></div>
+                    <div class="skill-bar"><span>CSS</span><strong>92%</strong><div><em style="--value:92%"></em></div></div>
+                    <div class="skill-bar"><span>JavaScript</span><strong>88%</strong><div><em style="--value:88%"></em></div></div>
+                    <div class="skill-bar"><span>React.js</span><strong>84%</strong><div><em style="--value:84%"></em></div></div>
+                    <div class="skill-bar"><span>Tailwind CSS</span><strong>82%</strong><div><em style="--value:82%"></em></div></div>
+                </article>
+
+                <article class="skill-category glass-panel reveal">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="circle-grid">
+                        <div class="circle-skill" style="--percent:78"><span>78%</span><small>Node.js</small></div>
+                        <div class="circle-skill" style="--percent:74"><span>74%</span><small>Express.js</small></div>
+                        <div class="circle-skill" style="--percent:72"><span>72%</span><small>Python</small></div>
+                    </div>
+                </article>
+
+                <article class="skill-category glass-panel reveal">
+                    <h3><i class="fa-solid fa-database"></i> Database & Other</h3>
+                    <div class="tag-cloud">
+                        <span>MySQL</span>
+                        <span>Mongoose</span>
+                        <span>Java</span>
+                        <span>C</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>API Integration</span>
+                        <span>Postman</span>
+                        <span>Problem Solving</span>
+                        <span>Data Structures</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Featured Work</span>
+                <h2>Projects from the resume and portfolio.</h2>
+                <p>Filter by category to explore full-stack, frontend, automation, and portfolio work.</p>
+            </div>
+
+            <div class="filter-tabs reveal" role="list" aria-label="Project filters">
+                <button class="filter-btn active" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="fullstack" type="button">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+                <button class="filter-btn" data-filter="automation" type="button">Automation</button>
+                <button class="filter-btn" data-filter="portfolio" type="button">Portfolio</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card reveal" data-category="fullstack">
+                    <img src="img/edu-track-project.png" alt="EDU TRACK college management dashboard project preview" loading="lazy">
+                    <div class="project-body">
+                        <h3>EDU TRACK - College Management System</h3>
+                        <p>A web-based college management system for managing students, faculty, courses, attendance, examinations, and academic records.</p>
+                        <div class="tech-stack"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span></div>
+                        <div class="project-actions"><a href="https://github.com/gopushankar" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="portfolio frontend">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Portfolio design workspace" loading="lazy">
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio showcasing skills, education, achievements, resume, and featured development projects.</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="project-actions"><a href="https://github.com/gopushankar" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="frontend">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80" alt="Translation and study workspace" loading="lazy">
+                    <div class="project-body">
+                        <h3>Google Translate App</h3>
+                        <p>A responsive translation web app with real-time text translation, dynamic client-side logic, and a smooth user interface.</p>
+                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API Integration</span></div>
+                        <div class="project-actions"><a href="https://github.com/gopushankar" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="fullstack frontend">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80" alt="Movie theater seats" loading="lazy">
+                    <div class="project-body">
+                        <h3>Movie Website</h3>
+                        <p>A movie browsing platform with a dynamic hero carousel, category browsing, and clean subscription pricing plans.</p>
+                        <div class="tech-stack"><span>React.js</span><span>Node.js</span><span>Tailwind CSS</span><span>MySQL</span></div>
+                        <div class="project-actions"><a href="https://github.com/gopushankar" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="automation">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="Automation dashboard and documents" loading="lazy">
+                    <div class="project-body">
+                        <h3>Task Manager - Gmail to Sheets</h3>
+                        <p>Connected Gmail and Google Sheets APIs with OAuth 2.0 to read incoming emails and log useful details into Sheets.</p>
+                        <div class="tech-stack"><span>Python</span><span>APIs</span><span>OAuth 2.0</span><span>Google Sheets</span></div>
+                        <div class="project-actions"><a href="https://github.com/gopushankar" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="achievements section" id="achievements">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Achievements</span>
+                <h2>Milestones from academics, competitions, and certifications.</h2>
+            </div>
+            <div class="achievement-grid">
+                <article class="achievement-card reveal"><i class="fa-solid fa-bug"></i><h3>Bug Hunt Winner</h3><p>Secured 1st place in the Bug Hunt competition at CUH campus, demonstrating analytical and coding skills.</p></article>
+                <article class="achievement-card reveal"><i class="fa-solid fa-chess-knight"></i><h3>Checkmate Challenge</h3><p>Secured 1st place in the Checkmate Challenge at CUH campus, showcasing strategic thinking.</p></article>
+                <article class="achievement-card reveal"><i class="fa-solid fa-certificate"></i><h3>Certifications</h3><p>Completed Full Stack Development, Oracle Cloud Infrastructure Foundations, Brain Wars, and Flash Code certifications.</p></article>
+                <article class="achievement-card reveal"><i class="fa-solid fa-users-gear"></i><h3>Event Leadership</h3><p>Managed Deepotsav 2025 under the Cultural Club and contributed to smooth execution of campus activities.</p></article>
+            </div>
+        </section>
+
+        <section class="timeline-section section" id="timeline">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Journey</span>
+                <h2>Education and experience timeline.</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <span>2021</span>
+                    <h3>Ekashila High School</h3>
+                    <p>Completed Class X with CGPA 10 and built a strong academic foundation.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span>2021 - 2023</span>
+                    <h3>Ekashila Junior College</h3>
+                    <p>Completed Intermediate with CGPA 8.9 while strengthening science, logic, and learning discipline.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span>Mar 2024 - Apr 2024</span>
+                    <h3>Full Stack Web Developer - Code Clause</h3>
+                    <p>Built full-stack web features with HTML, CSS, React.js, Node.js, JavaScript, Tailwind CSS, and backend API integration.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span>2023 - 2026</span>
+                    <h3>BCA - Chaitanya Deemed To Be University</h3>
+                    <p>BCA graduate track with CGPA 9, focused on Cloud Computing, Data Science, web development, and software engineering.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="github section" id="github">
+            <div class="section-heading reveal">
+                <span class="eyebrow">GitHub Dashboard</span>
+                <h2>Development profile and project focus.</h2>
+                <p>Featured repository work from full-stack apps, API integration, automation, and frontend development.</p>
+            </div>
+            <div class="github-grid reveal">
+                <article class="github-card contribution-card">
+                    <h3>Project Activity Graph</h3>
+                    <div class="contribution-grid" id="contributionGrid" aria-label="Simulated GitHub contribution graph"></div>
+                </article>
+                <article class="github-card"><i class="fa-solid fa-code-branch"></i><strong data-count="5">0</strong><span>Featured Repositories</span></article>
+                <article class="github-card"><i class="fa-solid fa-layer-group"></i><strong data-count="4">0</strong><span>Project Categories</span></article>
+                <article class="github-card"><i class="fa-solid fa-terminal"></i><strong data-count="7">0</strong><span>Core Languages & Tools</span></article>
+                <article class="github-card language-card"><h3>Most Used Technologies</h3><p><span style="--bar:34%">JavaScript / React.js</span><span style="--bar:24%">Node.js / Express.js</span><span style="--bar:20%">HTML / CSS / Tailwind</span><span style="--bar:14%">Python</span><span style="--bar:8%">MySQL</span></p></article>
+            </div>
+        </section>
+
+        <section class="resume section" id="resume">
+            <div class="resume-card reveal">
+                <div>
+                    <span class="eyebrow">Resume</span>
+                    <h2>Resume aligned with full-stack roles.</h2>
+                    <p>Download or view the attached CV with education, projects, certifications, achievements, and contact details.</p>
+                </div>
+                <div class="resume-preview" aria-label="Resume preview card">
+                    <h3>Gopu Shankar</h3>
+                    <p>Full-Stack Developer | BCA Graduate | Problem Solver</p>
+                    <ul>
+                        <li>React.js, Node.js, Python, MySQL</li>
+                        <li>EDU TRACK College Management System</li>
+                        <li>Cloud Computing and Data Science interests</li>
+                    </ul>
+                </div>
+                <div class="resume-actions">
+                    <a class="btn primary" href="Gopu_Shankar_cv_9250.pdf" download><i class="fa-solid fa-download"></i> Download</a>
+                    <a class="btn secondary" href="Gopu_Shankar_cv_9250.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-eye"></i> View Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="section-heading reveal">
+                <span class="eyebrow">Contact</span>
+                <h2>Let us build something useful.</h2>
+                <p>For internships, full-stack roles, collaborations, or project discussions, send a message.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info glass-panel reveal">
+                    <h3>Contact Details</h3>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:gopu0611@gmail.com">gopu0611@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+918688116048">8688116048</a></p>
+                    <p><i class="fa-solid fa-location-dot"></i> Warangal Rural, Telangana</p>
+                    <p><i class="fa-solid fa-clock"></i> Usually replies within 24 hours</p>
+                </div>
+                <form class="contact-form glass-panel reveal" id="contactForm" novalidate>
+                    <div class="field"><label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" autocomplete="name" required></div>
+                    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+                    <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div>
+                    <div class="field full"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button class="btn primary full" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <a class="brand" href="#home"><span class="brand-logo" aria-hidden="true">GS</span><span>Gopu Shankar</span></a>
+                <p>Full-Stack Developer building web applications with React.js, Node.js, Python, and MySQL.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <a href="https://github.com/gopushankar" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/gopu-shankar-9a8b4a23a" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="mailto:gopu0611@gmail.com">Email</a>
+                <a href="https://www.instagram.com/_wolf0_6/" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright <span id="year"></span> Gopu Shankar. All rights reserved.</p>
+            <a class="back-to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
